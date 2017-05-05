@@ -22,7 +22,7 @@ spec:
       jenkinsfile: |-
         node('maven') {
         stage 'tag'
-        openshiftTag(namespace: 'development', sourceStream: 'simplephp', sourceTag: 'latest', destinationNamespace: 'testing', destinationStream: 'nodejs-example', destinationTag: 'latest')
+        openshiftTag(namespace: 'development', sourceStream: 'simplephp', sourceTag: 'latest', destinationNamespace: 'testing', destinationStream: 'simplephp', destinationTag: 'latest')
         stage 'deploy'
         openshiftDeploy(deploymentConfig: 'simplephp', namespace: 'testing')
         }
