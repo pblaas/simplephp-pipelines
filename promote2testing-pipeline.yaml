@@ -7,9 +7,9 @@ metadata:
   creationTimestamp: null
   labels:
     app: jenkins-pipeline-testing
-    name: testing-pipeline
+    name: testing-simplephp-pipeline
     template: application-template-testing-pipeline
-  name: testing-pipeline
+  name: testing-simplephp-pipeline
 spec:
   output: {}
   postCommit: {}
